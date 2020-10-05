@@ -1,0 +1,284 @@
+h3{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h3, p, .datosBanda{
+  font-family: 'Abel', sans-serif;
+}
+
+.mainNav {
+  position: absolute;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.mainNav, .bordeArribaNews h2, .bordeArribaMusic h2, .lista li a, .datosBanda h1{
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.mainNav .navbar-brand {
+  font-size: 30px;
+  font-weight: 800;
+  color: #343a40;
+}
+
+.mainNav .navbar-toggler {
+  font-size: 15px;
+  font-weight: 800;
+  padding: 13px;
+  text-transform: uppercase;
+  color: #cc1a25;
+}
+
+.nav-link, .datosBanda{
+  font-size: 20px;
+}
+
+.nav-link {
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-left: 40px;
+}
+
+@media only screen and (min-width: 992px) {
+  .mainNav {
+    position: absolute;
+    border-bottom: 1px solid transparent;
+    background: transparent;
+  }
+  .mainNav .navbar-brand {
+    padding: 10px 30px;
+    color: #fff;
+  }
+  .mainNav .navbar-brand:focus, .mainNav .navbar-brand:hover {
+    color: #cc1a25;
+  }
+  .mainNav .navbar-nav > li.nav-item > a {
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+  }
+  .mainNav .navbar-nav > li.nav-item > a:focus, .mainNav .navbar-nav > li.nav-item > a:hover {
+    color: #cc1a25;
+  }
+  .mainNav .tongue {
+    display: block;
+  }
+  .mainNav .tongue .tongue-sprite {
+    background-image: url(../img/tongue-sprite.png);
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 50px;
+    position: relative;
+    z-index: 1;
+    width: 96px;
+    height: 111px;
+    background-size: auto 100%;
+    background-position: 0px center;
+    top: -15px;
+  }
+  .mainNav .tongue .tongue-sprite:hover {
+    width: 95px; 
+    height: 111px;
+    background-image: url(../img/tongue-sprite.png);
+    animation: pass 3s steps(23,start) infinite;  
+  }
+  @keyframes pass {
+    0% {background-position: 0 0}
+    100% {background-position: -10924px 0}
+  }
+  .noticia {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px;
+  }
+  .inferior {
+    margin-top: 15px;
+  }
+  .bordeAbajoNewsHome{
+    margin-top: 440px;
+  }
+  .bordeAbajoNews {
+    margin-top: 645px;
+  }
+  .bordeAbajoTour {
+    margin-top: 30px;
+  }
+  .tableTour {
+    margin-left: 45px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding-bottom: 15px;
+  }
+  .bamusic{
+    margin-top: 500px;
+  }
+  .basup {
+    margin-top: 35px;
+  }
+  .baband {
+    margin-top: 30px;
+  }
+}
+
+.bordeArribaNews, .bordeArribaCarousel, .bordeArribaMusic, .bordeAbajoNewsHome, .bordeAbajoNews, .bordeAbajoCarousel, .bordeAbajoMusic{
+  background-color: #cc1a25;
+}
+
+.bordeArribaNews, .bordeArribaCarousel, .bordeArribaMusic{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.bordeArribaNews h2, .bordeArribaMusic h2{
+  padding-top: 5px;
+  color: white;
+  margin-left: 20px;
+}
+
+.bordeArribaCarousel, .bordeAbajoCarousel, .bordeAbajoNews, .bordeAbajoNewsHome, .bordeAbajoMusic, .bordeArribaMusic, .bordeArribaNews{
+  height: 40px;
+}
+
+.bordeArribaNews{
+  margin-bottom: 25px;
+}
+
+.bordeAbajoNews, .bordeAbajoNewsHome, .bordeAbajoCarousel, .bordeAbajoMusic{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+
+/*TERMINA EL MAINNAV*/
+header.masthead {/*ya esta*/
+  margin-bottom: 50px;
+  background: no-repeat center center;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url("../img/headerrs.jpg");
+  z-index: 0;
+}
+
+header.masthead .overlay {/*ya esta*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #212529;
+  opacity: 0;
+}
+
+@media only screen and (min-width: 768px) { /*ya pasado*/
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+    padding: 250px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .noticia a h3{
+    text-align: center;
+    font-size: 10px;
+  }
+  .bordeArribaNews h2, .bordeArribaMusic h2{
+    padding-top: 7px;
+    font-size: 25px;
+  }
+  .bordeArribaCarousel{
+    margin-top: 20px;
+  }
+  .mainNav .li-tongue .tongue {
+    display: none;
+  }
+  .bordeAbajoNewsHome {
+    margin-top: 240px;
+  }
+  .bordeAbajoNews {
+    margin-top: 370px;
+  }
+  .noticia {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    padding-top: 10px;
+  }
+  .inferior {
+    margin-top: 5px;
+  }
+  .bordeAbajoTour {
+    margin-top: 20px;
+  }
+  .tableTour {
+    margin-left: 25px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding-bottom: 15px;
+  }
+  .bamusic {
+    margin-top: 320px;
+  }
+  .basup {
+    margin-top: 25px;
+  }
+  .baband {
+    margin-top: 30px;
+  }
+}
+
+/*FOOTER*/
+footer {
+  padding: 200px 0 65px;
+}
+
+/*LISTA*/
+.lista li{
+  display: inline-block;
+  font-weight: bold;
+  color: #cc1a25;
+}
+
+.lista {
+  padding-right: 70px;
+}
+
+.datosBanda {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 10px;
+  text-align: center;
+}
+
+.noticia a:hover{
+  text-decoration: none;
+}
+
+.noticia h3{
+  font-size: 20px;
+}
+
+.noticia a h3:hover{
+
+  color: #cc1a25;
+}
+
+.album {
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.formulario {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 10px;
+}
+
+#selectFiltro, #inputPrice, #inputStadium, #inputCity {
+  margin-bottom: 15px;
+}
